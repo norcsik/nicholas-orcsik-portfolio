@@ -1,0 +1,29 @@
+
+@font-face {
+    font-family: 'jetbrains-mono-regular';
+    src: url('/assets/fonts/JetBrainsMonoNL-Regular.ttf');
+}
+
+body{
+    margin: -8px;
+    height: 100vh;
+    width: auto;
+
+    background-color: rgb(24, 39, 61);
+    color: rgb(62, 255, 149);
+    font-family: 'jetbrains-mono-regular';
+
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    padding: 1em;
+    padding-top: 0;
+}
+
+footer{
+    text-align: center;
+    margin-top: auto;
+    padding: 1em;
+}
