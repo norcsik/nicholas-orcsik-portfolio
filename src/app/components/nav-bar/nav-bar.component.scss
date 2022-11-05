@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'mister-firley-regular';
+    src: url('/assets/fonts/mister-firley.regular.ttf');
+}
+
+h1{
+    font-family: 'mister-firley-regular';
+    text-align: right;
+    font-size: 4em;
+    padding-right: 1em;
+    transition: all 0.5s;
+
+    color: rgb(62, 255, 149);;
+    //color: transparent;
+    //text-shadow: 0 0 10px rgb(62, 255, 149);
+}
+
+h1:hover{
+    transform: scale(1.25) translateX(-0.5em);
+    //transform-origin: center right;
+    color: rgb(244, 255, 249);
+    text-shadow: 0 0 25px rgb(82, 255, 125);
+}
