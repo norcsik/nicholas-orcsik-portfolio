@@ -4,11 +4,6 @@
     src: url('/assets/fonts/JetBrainsMonoNL-Regular.ttf');
 }
 
-@font-face {
-    font-family: 'jetbrains-mono-italics';
-    src: url('/assets/fonts/JetBrainsMonoNL-Italic.ttf');
-}
-
 html{
     background-color: rgb(24, 39, 61);
     font-family: 'jetbrains-mono-regular';
@@ -19,19 +14,6 @@ html{
 
 header{
     padding-bottom: 1em;
-}
-
-span{
-    display: flex;
-}
-
-p{
-    flex: 1;
-    align-self: center;
-    color: mediumseagreen; 
-    font-family: 'jetbrains-mono-italics';
-    padding-left: 10em;
-    padding-right: 10em;
 }
 
 footer{

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'jetbrains-mono-italics';
+    src: url('/assets/fonts/JetBrainsMonoNL-Italic.ttf');
+}
+
+:host{
+    align-self: center;
+}
+
+p{
+    flex: 1;
+    
+    color: mediumseagreen; 
+    font-family: 'jetbrains-mono-italics';
+    padding-left: 10em;
+    padding-right: 10em;
+}
