@@ -3,6 +3,10 @@
     font-family: 'jetbrains-mono-regular';
     src: url('/assets/fonts/JetBrainsMonoNL-Regular.ttf');
 }
+@font-face {
+    font-family: 'mister-firley-regular';
+    src: url('/assets/fonts/mister-firley.regular.ttf');
+}
 
 body{
     margin: -8px;
@@ -20,6 +24,9 @@ body{
 header{
     padding: 1em;
     padding-top: 0;
+    padding-bottom: 0;
+    font-family: 'mister-firley-regular';
+    font-size: large;
 }
 
 footer{
