@@ -4,13 +4,24 @@ import { Work } from "./work-interface";
 let work1: Work;
 work1 = {
     id: 0,
-    name: "TEST",
-    date: "November 25, 2022",
-    blurb: "Little blurb here",
+    name: "BookNook",
+    date: "November 28, 2022",
+    blurb: "A book searching and collection app for Apple devices.",
     description: "Proper paragraph talking about the project.", 
-    img: "The path for the image will go here",
-    tags: ["Java", "Android", "Kotlin"]
+    img: "https://returntofreedom.org/store/wp-content/uploads/default-placeholder.png",
+    tags: ["XCode", "iOS", "Swift", "API", "JSON"]
+};
+
+let work2: Work;
+work2 = {
+    id: 1,
+    name: "MealMate",
+    date: "April 25, 2022",
+    blurb: "A recipe searching app for Android devices.",
+    description: "Proper paragraph talking about the project.", 
+    img: "https://returntofreedom.org/store/wp-content/uploads/default-placeholder.png",
+    tags: ["Java", "Android", "API", "SQLite"]
 };
 
 //Array of works
-export let ALLWORKS: Work[] = [work1];;
+export let ALLWORKS: Work[] = [work1, work2];;

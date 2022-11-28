@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ALLWORKS } from 'src/helper-files/work-db';
+import { Work } from 'src/helper-files/work-interface';
 
 @Component({
   selector: 'app-work-list',
@@ -7,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkListComponent implements OnInit {
 
-  constructor() { }
+  //New Array
+  workList: Work[];
+
+  //Initialize array and work service
+  constructor() { 
+    this.workList = ALLWORKS;
+  }
 
   ngOnInit(): void {
   }
