@@ -9,6 +9,11 @@ import { MainPageComponent } from './components/main-page/main-page.component';
 import { WorksPageComponent } from './components/works-page/works-page.component';
 import { WorkCardComponent } from './components/work-card/work-card.component';
 import { WorkListComponent } from './components/work-list/work-list.component';
+import { WorkDetailComponent } from './components/work-detail/work-detail.component';
+
+import { HttpClientModule } from "@angular/common/http";
+import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
+import { InMemoryDataService } from "./services/in-memory-data.service";
 
 @NgModule({
   declarations: [
@@ -18,11 +23,17 @@ import { WorkListComponent } from './components/work-list/work-list.component';
     MainPageComponent,
     WorksPageComponent,
     WorkCardComponent,
-    WorkListComponent
+    WorkListComponent,
+    WorkDetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
+      dataEncapsulation: false,
+      delay: 500
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

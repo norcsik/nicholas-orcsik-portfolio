@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutPageComponent } from '../about-page/about-page.component';
+import { WorkDetailComponent } from '../work-detail/work-detail.component';
 import { WorksPageComponent } from '../works-page/works-page.component';
 
 const routes: Routes = [
@@ -16,6 +17,10 @@ const routes: Routes = [
   { 
     path: "works", 
     component: WorksPageComponent
+  },
+  { 
+    path: "works/:id", 
+    component: WorkDetailComponent
   }
       
 ];

@@ -19,14 +19,4 @@ export class WorkCardComponent implements OnInit {
 
   }
 
-  infoDisplay(){
-
-    //Put info into variables
-    var id = this.workDisplay?.id;
-    var name = this.workDisplay?.name;
-
-    //Display info
-    console.log("ID: " + id + "\nPRoject name: " + name);
-  }
-
 }

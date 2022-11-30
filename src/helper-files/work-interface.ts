@@ -4,7 +4,7 @@ export interface Work{
     date: string;
     blurb: string;
     description: string;
-    img?: string;
+    imgs: string[];
     tags?: string[];
     links?: string[];
 }
