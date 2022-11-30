@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { AboutPageComponent } from './components/about-page/about-page.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
+import { WorksPageComponent } from './components/works-page/works-page.component';
+import { WorkCardComponent } from './components/work-card/work-card.component';
+import { WorkListComponent } from './components/work-list/work-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     AboutPageComponent,
-    MainPageComponent
+    MainPageComponent,
+    WorksPageComponent,
+    WorkCardComponent,
+    WorkListComponent
   ],
   imports: [
     BrowserModule,

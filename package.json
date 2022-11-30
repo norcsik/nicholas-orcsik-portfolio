@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "gen-comp": "ng generate component"
+    "gen-comp": "ng generate component",
+    "gen-serv": "ng generate service"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +23,8 @@
     "normalize.css": "^8.0.1",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "angular-in-memory-web-api": "0.14.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^13.3.9",

@@ -1,0 +1,24 @@
+<!-- Display work -->
+<div *ngIf="workDisplay">
+
+    <h3>—□✕</h3>
+
+    <article>
+
+        <section class="display-area">
+            <section>
+                <h1 class = "name">{{ workDisplay.name }}</h1>
+                <h2>{{ workDisplay.date }}</h2>
+                <p>{{ workDisplay.blurb }}</p>
+            </section>
+            <span [ngSwitch]='workDisplay.img'>
+                <img *ngSwitchCase="null" (click) = "infoDisplay()" [src] = "'https://returntofreedom.org/store/wp-content/uploads/default-placeholder.png'" width = 300 height = 300>
+                <img *ngSwitchDefault (click) = "infoDisplay()" [src] = "workDisplay.img" width = 200 height = 200>
+            </span>
+        </section>
+        
+        <br>
+        <a [routerLink]="['/works',workDisplay.id]" routerLinkActive="active">More Details</a>
+        <br>
+    </article>
+</div>

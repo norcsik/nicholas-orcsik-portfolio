@@ -11,9 +11,6 @@
 :host{
     align-self: center;
     flex: 1;
-    margin-left: 11em;
-    margin-right: 9em;
-
     margin-top: 2em;
 }
 
@@ -28,11 +25,19 @@ h3{
     margin-bottom: 0;
 }
 
-div{
+.content{
     padding: 1em;
     padding-top: 0;
+}
+
+.box{
     border: 2px solid rgb(62, 255, 149);
-    transition: all 0.3s;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    float: left;
+    margin-left: 10em;
 }
 
 // div:hover{

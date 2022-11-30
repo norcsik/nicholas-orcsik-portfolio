@@ -8,9 +8,21 @@
     src: url('/assets/fonts/mister-firley.regular.ttf');
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.main_page::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.main_page {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 body{
     margin: -8px;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     width: auto;
 
     background-color: rgb(24, 39, 61);
