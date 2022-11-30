@@ -11,6 +11,10 @@ import { WorkCardComponent } from './components/work-card/work-card.component';
 import { WorkListComponent } from './components/work-list/work-list.component';
 import { WorkDetailComponent } from './components/work-detail/work-detail.component';
 
+import { HttpClientModule } from "@angular/common/http";
+import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
+import { InMemoryDataService } from "./services/in-memory-data.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +28,12 @@ import { WorkDetailComponent } from './components/work-detail/work-detail.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
+      dataEncapsulation: false,
+      delay: 500
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
