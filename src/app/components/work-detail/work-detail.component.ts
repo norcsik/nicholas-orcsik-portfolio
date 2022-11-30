@@ -12,6 +12,7 @@ export class WorkDetailComponent implements OnInit {
 
   id?: string;
   workDisplay?: Work;
+  slideIndex: number;
 
   constructor(private route: ActivatedRoute, private workService: WorkService) { 
     this.workDisplay = {
@@ -19,8 +20,26 @@ export class WorkDetailComponent implements OnInit {
       name: "",
       description: "",
       blurb: "",
-      date: ""
+      date: "",
+      imgs: [""]
     }
+
+    this.slideIndex = 1;
+
+    console.log("constructor");
+
+    //Turn on the first image
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log("Did the");
+      let slides = document.getElementsByClassName("image") as HTMLCollectionOf<HTMLImageElement>;
+      slides[0].style.display = "block";
+    });
+
+    setTimeout(function(){
+      console.log("Did the");
+      let slides = document.getElementsByClassName("image") as HTMLCollectionOf<HTMLImageElement>;
+      slides[0].style.display = "block";
+     }, 25);
   }
 
   ngOnInit(): void {
@@ -39,6 +58,39 @@ export class WorkDetailComponent implements OnInit {
         this.workDisplay = singleWork;
       });
     });
+
   }
+
+  //IMAGE CAROUSEL FUNCTIONALITY//
+
+  // Next/previous controls
+  plusSlides(num: number) {
+    this.showSlides(this.slideIndex += num);
+  }
+
+  // Thumbnail image controls
+  currentSlide(num: number) {
+    this.showSlides(this.slideIndex = num);
+  }
+
+  showSlides(num: number) {
+    let slides = document.getElementsByClassName("image") as HTMLCollectionOf<HTMLImageElement>;
+
+    if (num > slides.length) {
+      this.slideIndex = 1
+    }
+    if (num < 1) {
+      this.slideIndex = slides.length
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      console.log(i + " set to none");
+    }
+
+    console.log(this.slideIndex - 1 + " set to block");
+    slides[this.slideIndex - 1].style.display = "block";
+    
+  } 
 
 }
