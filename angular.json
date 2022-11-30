@@ -107,5 +107,7 @@
       }
     }
   },
-  "defaultProject": "nicholas-orcsik-portfolio"
+  "cli": {
+    "analytics": false
+  }
 }
