@@ -23,6 +23,8 @@ p{
     margin-right: 23em;
     padding-top: 0;
     border: 2px solid rgb(62, 255, 149);
+
+    width: 800px;
 }
 
 .wrapper{
@@ -58,7 +60,7 @@ h2{
 
 //Carousel styling
 .carousel {
-    display: block;
+    display: flex;
     margin: auto;
     width: fit-content;
 }
@@ -88,12 +90,15 @@ a{
     cursor: pointer;
     top: 50%;
     width: auto;
-    padding: 30px;
-    margin: 1em;
+    height: auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-top: auto;
+    margin-bottom: auto;
 
     color: rgb(62, 255, 149);
     font-weight: bold;
-    font-size: 24px;
+    font-size: 36px;
 
     transition: 0.2s ease;
 }
