@@ -1,1 +1,17 @@
-<p>work-detail works!</p>
+<div *ngIf="workDisplay">
+
+    <h1>{{ workDisplay.name }}</h1>
+    <h2>{{ workDisplay.date }}</h2>
+
+    <p>{{ workDisplay.description }}</p>
+
+    <span *ngIf="workDisplay?.tags">
+        <div class="tags" *ngIf="workDisplay.tags">
+            <p class="tag" *ngFor="let tag of workDisplay.tags">
+                #{{ tag }}
+            </p>
+        </div>
+    </span>
+
+    
+</div>
