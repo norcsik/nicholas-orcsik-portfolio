@@ -14,6 +14,7 @@ import { WorkDetailComponent } from './components/work-detail/work-detail.compon
 import { HttpClientModule } from "@angular/common/http";
 import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
 import { InMemoryDataService } from "./services/in-memory-data.service";
+import { ContactPageComponent } from './contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { InMemoryDataService } from "./services/in-memory-data.service";
     WorksPageComponent,
     WorkCardComponent,
     WorkListComponent,
-    WorkDetailComponent
+    WorkDetailComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,
