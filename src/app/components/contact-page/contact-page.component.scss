@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'jetbrains-mono-italics';
+    src: url('/assets/fonts/JetBrainsMonoNL-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'jetbrains-mono-regular';
+    src: url('/assets/fonts/JetBrainsMonoNL-Regular.ttf');
+}
+
+:host{
+    align-self: center;
+    flex: 1;
+    margin-top: 5em;
+}
+
+
+h3{
+    background-color: rgb(62, 255, 149);;
+    color: rgb(24, 39, 61);
+    font-family: 'jetbrains-mono-regular';
+    text-align: right;
+    letter-spacing: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content{
+    padding: 1em;
+    padding-top: 0;
+    display: flex;
+}
+
+.symbol{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    transform: translate(-1em);
+    font-size: 3em;
+}
+
+
+.box{
+    border: 2px solid rgb(62, 255, 149);
+
+    margin-right: auto;
+    width: 50%;
+    float: left;
+    margin-left: 10em;
+}
+
+// div:hover{
+//     color: white;
+//     text-shadow: 0 0 25px rgb(82, 255, 125);
+// }
+
+h1{
+    color: rgb(62, 255, 149);
+    font-family: 'jetbrains-mono-regular';
+    text-decoration: underline;
+}
+
+a{
+    color: mediumseagreen; 
+    font-family: 'jetbrains-mono-italics';
+}
+
+li{
+    margin-bottom: 0.5em;
+}
+
+article{
+    width: 42em;
+}
