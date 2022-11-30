@@ -1,0 +1,48 @@
+
+@font-face {
+    font-family: 'jetbrains-mono-regular';
+    src: url('/assets/fonts/JetBrainsMonoNL-Regular.ttf');
+}
+@font-face {
+    font-family: 'mister-firley-regular';
+    src: url('/assets/fonts/mister-firley.regular.ttf');
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.main_page::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.main_page {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body{
+    margin: -8px;
+    min-height: 100vh;
+    height: auto;
+    width: auto;
+
+    background-color: rgb(24, 39, 61);
+    color: rgb(62, 255, 149);
+    font-family: 'jetbrains-mono-regular';
+
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    padding: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: 'mister-firley-regular';
+    font-size: large;
+}
+
+footer{
+    text-align: center;
+    margin-top: auto;
+    padding: 1em;
+}
