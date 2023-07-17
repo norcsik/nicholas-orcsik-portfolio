@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+:host{
+    //align-self: center;
+    //flex: 1;
+    margin-top: 2em;
+}
+
+.content{
+
+    display: flex;
+    margin: auto;
+    width: 50%;
+
+    margin-top: 1em;
+    margin-left: 11em;
+    padding: 1em;
+    padding-top: 0;
+
+    width: 30em;
+}
+
+// .symbol{
+//     display: block;
+//     width: fit-content;
+//     margin: auto;
+//     //transform: translate(-1em);
+//     font-size: 3em;
+// }
+
+
+// div:hover{
+//     color: white;
+//     text-shadow: 0 0 25px rgb(82, 255, 125);
+// }
+
+h1{
+    background-color: black;
+    color: white;
+    font-family: 'PT Sans';
+    text-decoration: underline;
+    display:inline;
+    padding: 0.5em;
+}
+
+a{
+    color: rgb(70, 70, 70); 
+    font-family: 'PT Sans';
+    font-size: 1em;
+}
+
+li{
+    margin-bottom: 0.5em;
+    font-family: 'PT Sans';
+}
+
+article{
+    margin-top: 2em;
+    font-family: 'PT Sans';
+    font-size: 1.5em;
+    font-weight: 600;
+}

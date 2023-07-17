@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+p{
+    white-space: normal;
+    font-family: "PT Sans";
+    font-size: 1.2em;
+}
+
+:host{
+    align-self: center;
+    margin-top: 2em;
+    margin-left: 10em;
+    margin-right: 23em;
+    padding-top: 0;
+    border: 2px solid black;
+
+    width: 900px;
+}
+
+.wrapper{
+    padding: 1em;
+    display: block;
+}
+
+.tags{
+    display: flex;
+    margin: auto;
+    width: fit-content;
+}
+
+.tag{
+    margin: 0.5em;
+    margin-top: 0;
+    padding: 1em;
+    border: 2px solid black;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3em;
+    font-family: 'Quicksand';
+    font-weight: 600;
+}
+
+h2{
+    margin-top: -4px;
+    font-size: medium;
+    color: rgb(42, 42, 42); 
+    font-family: "PT Sans";
+    font-size: 1em;
+}
+
+//Carousel styling
+.carousel {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+}
+
+.image-view{
+    display: block;
+    margin: auto;
+    
+}
+
+.image {
+    display: none;
+    border: 2px solid black;
+    margin-bottom: 0.5em;
+    //max-width: 660px;
+}
+
+/* Next & previous buttons */
+
+.arrows{
+    display: block;
+    margin: auto;
+    margin-bottom: 0;
+    width: fit-content;
+    position: fixed;
+}
+
+a{
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    height: auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    color: black;
+    font-weight: bold;
+    font-size: 36px;
+
+    transition: 0.2s ease;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+a:hover {
+    color: white;
+    text-shadow: 0 0 10px black;
+    transform: scale(1.25);
+}

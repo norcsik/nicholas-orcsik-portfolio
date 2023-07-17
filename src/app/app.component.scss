@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.main_page::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.main_page {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body{
+    margin: -8px;
+    min-height: 100vh;
+    height: auto;
+    width: auto;
+
+    background-color: white;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    padding: 2em;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: black;
+
+    font-family: 'Quicksand';
+    color: white;
+
+    display: flex;
+}
+
+h2{
+    font-size: 2em;
+}
+
+.nav-bar{
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+footer{
+    text-align: center;
+    margin-top: auto;
+    padding: 1em;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}

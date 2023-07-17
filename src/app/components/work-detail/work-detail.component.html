@@ -1,0 +1,44 @@
+<div *ngIf="workDisplay">
+
+    <div class="wrapper">
+        <h1>{{ workDisplay.name }}</h1>
+        <h2>{{ workDisplay.date }}</h2>
+
+        <p>{{ workDisplay.description }}</p>
+
+        <!-- Slideshow container -->
+        <div class="carousel" *ngIf="workDisplay.imgs">
+
+            <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+
+            <!-- Full-width images with number and caption text -->
+            <div class="image-view" *ngFor="let img of workDisplay.imgs">
+
+                <div *ngIf="img.endsWith('.mp4'); else elseBlock">
+                    <video class="image" height="400" controls>
+                        <source src="{{img}}" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video> 
+                </div>
+
+                <ng-template #elseBlock>
+                    <img class="image" src={{img}} style="height:400px">
+                </ng-template>
+
+            </div>
+
+            <a class="next" (click)="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <span *ngIf="workDisplay?.tags">
+            <div class="tags" *ngIf="workDisplay.tags">
+                <p class="tag" *ngFor="let tag of workDisplay.tags">
+                    {{ tag }}
+                </p>
+            </div>
+        </span>
+    </div>
+    
+</div>
